@@ -1,0 +1,89 @@
+/*
+ * @mixins
+ */
+ 
+button_search_header(radio,pix,borcol,col)
+	border-radius radio
+	padding .3em .5em
+	border solid pix borcol
+	color col
+	
+.Social
+	padding .2em 0
+	background color_nav_social
+	position fixed
+	left 0
+	right 0
+	color white
+	height 2em
+	overflow hidden
+	z-index 1
+
+.Social-redes
+	float right
+	overflow hidden
+	width 20em
+
+.SocialRedesIcon-link
+	color white
+
+.SocialRedes-icon
+	float left
+	
+.SocialRedesIcon-i
+	margin 0.5em 1em 0 0
+
+.SocialSearch
+	float right
+	&::after
+		color #000
+		content "\f002"
+		cursor pointer
+		font-family "FontAwesome"
+		margin-left -5.5em
+		position absolute
+		right 27px
+		top 10px
+
+.SocialSearch-input
+	margin 0.3em 1.5em 0 0
+	button_search_header(.5em,1px,white,black)
+	
+.HeaderBrand
+	background rgba(0,0,0,0.8)
+	height 5em
+	left 0 
+	padding 1em 0
+	position relative
+	right 0
+	text-align center
+	top 2em
+	
+.HeaderBrand-figure
+	display inline-block
+	margin 0
+
+.HeaderBrand-img
+	width 120px
+	margin 0.5em 0 0 2em
+	
+
+.HeaderMenu
+	display inline-block
+
+.HeaderMenu-ul
+	list-style none
+	margin-top -2em
+
+.HeaderMenu-li
+	float left
+	margin 0 3em 0 0
+
+.HeaderMenu-a
+	color white
+	text-decoration none
+	font-size 17px
+	&:hover
+		text-decoration underline
+
+	

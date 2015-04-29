@@ -1,0 +1,134 @@
+<html class="no-js"> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width"/>
+        <title>Home</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/normalize.css">
+
+    </head>
+    <body class="backgroundFormulario">
+        <header class="Header">
+            <section class="Social">
+                <div class="Social-redes">
+                    <div class="SocialRedes-icon">
+                        <a class="SocialRedesIcon-link" href="https://www.facebook.com/pages/Innovasystem-Ecuador/237548319664432?fref=ts" target="_blank"><i class="SocialRedesIcon-i fa fa-facebook"></i></a>
+                        <a class="SocialRedesIcon-link" href="https://twitter.com/InnovaSystemEc" target="_blank"><i class="SocialRedesIcon-i fa fa-twitter"></i></a>
+                        <a class="SocialRedesIcon-link" href="mailto:innovasysteminfo@gmail.com?Subject=%20again" target="_blank"><i class="SocialRedesIcon-i fa fa-user"></i></a>
+                    </div>
+                    <div class="SocialSearch">
+                        <input type="text" class="SocialSearch-input" placeholder="Buscar"/>
+                    </div>
+                </div>
+            </section>
+            <div class="Screem-medium" >
+                <h1 class="Screem-medium-titulo">Innovasystem Ecuador S.A.</h1> 
+            </div>
+            <div class="HeaderBrand">
+                <a class="HeaderBrand-figure"  href="../innovaWeb-master/index.html" >
+                    <img src="img/logo.png" alt="" class="HeaderBrand-img"  />
+                </a>
+                <nav class="HeaderMenu">
+                   <ul class="HeaderMenu-ul">
+                        <li class="HeaderMenu-li"><a class="HeaderMenu-a" href="../innovaWeb-master/index.html" >Home</a></li>
+                        <li class="HeaderMenu-li"><a class="HeaderMenu-a" href="../innovaWeb-master/nosotros.html">Nosotros</a></li>
+                        <li class="HeaderMenu-li"><a class="HeaderMenu-a" href="../innovaWeb-master/tecnologia.html">Tecnologia</a></li>
+                        
+                        <li class="HeaderMenu-li"><a class="HeaderMenu-a" href="../innovaWeb-master/portafolio.html">Portafolio</a></li>
+                        <li class="HeaderMenu-li"><a class="HeaderMenu-a" href="../innovaWeb-master/contactanos.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="titulo"><h2>Trabaje con Nosotros</h2></div>
+            <div class="formulario">
+                <form action="php/procesar.php" method="post"  enctype="multipart/form-data">
+                <div class="contenedor1"> 
+                    <div class="content-input">
+                        <div class="label">
+                            <label class="texto">Nombre</label>
+                        </div>
+                        <input name="name" id="c_name" class="input text" data-parsley-trigger="change" required="">
+                    </div>
+                   
+                    <div class="content-input">
+                        <div class="label">
+                            <label class="texto">Apellido</label>
+                        </div>
+                        <input name="company_name" class="input text" data-parsley-trigger="change" required="">
+                    </div>
+                    <div class="content-input">
+                        <div class="label">
+                            <label class="texto">Cédula o Pasaporte</label>
+                        </div>
+                        <input name="email" class="input email" data-parsley-trigger="email" id="c_email" required="">
+                    </div>
+                    
+                    <div class="content-input">
+                        <div class="label">
+                            <label class="texto">E-mail</label>
+                        </div>
+                        <input name="number" class="input text" data-parsley-trigger="number" required="">
+                    </div>
+                    <div class="content-input content-cmb">
+                        <div class="label">
+                            <label class="texto">Estado Civil</label>
+                        </div>
+                        <select class="cmb input">
+                            <option value="volvo">Soltero</option>
+                             <option value="saab">Casado</option>
+                        </select>
+                    </div>
+                     <div class="content-input">
+                        <div class="label">
+                            <label class="texto">Cargas Familiares</label>
+                        </div>
+                        <input name="number" class="input text" data-parsley-trigger="number" required="">
+                    </div>
+                </div>
+                <div class="contenedor1"> 
+                    <div class="content-input">
+                        <div class="label">
+                            <label class="texto">Ciudad</label>
+                        </div>
+                        <input name="name" id="c_name" class="input text" data-parsley-trigger="change" required="">
+                    </div>
+                   
+                    <div class="content-input">
+                        <div class="label">
+                            <label class="texto">Dirección</label>
+                        </div>
+                        <input name="company_name" class="input text" data-parsley-trigger="change" required="">
+                    </div>
+                    <div class="content-input">
+                        <div class="label">
+                            <label class="texto">Teléfono</label>
+                        </div>
+                        <input name="email" class="input email" data-parsley-trigger="email" id="c_email" required="">
+                    </div>
+                    
+                    <div class="content-input">
+                        <div class="label">
+                            <label class="texto">Celular</label>
+                        </div>
+                        <input name="number" class="input text" data-parsley-trigger="number" required="">
+                    </div>
+                    <div class="content-input">
+                        <div class="label">
+                            <label class="texto">Curriculum</label>
+                        </div>
+                        <input type="file" name="curriculum" class="input-file" />
+                    </div>
+                    <br class="clear">
+                    <div class="enviar">
+                        <input name="send" type="submit" value="Enviar" class="finish buttonFloat send" id="c_enviar"></input>
+                    </div>
+                </div>
+                </form>
+            </div>
+    </body>
+</html>
